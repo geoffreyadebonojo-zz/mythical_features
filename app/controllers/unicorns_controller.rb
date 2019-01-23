@@ -26,9 +26,7 @@ class UnicornsController < ApplicationController
   end
   def destroy
     @unicorn.destroy
-    respond_to do |format|
-      format.html { redirect_to unicorns_url }
-    end
+    redirect_to unicorns_url
   end
 
   private
